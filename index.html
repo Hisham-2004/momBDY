@@ -159,7 +159,7 @@ function showPhoto(i){
 photos.forEach((_,i)=>{const d=document.createElement('span');d.className='dot';d.onclick=()=>{showPhoto(i);restart()};dots.appendChild(d)});
 document.getElementById('prev').onclick=()=>{showPhoto(index-1);restart()};
 document.getElementById('next').onclick=()=>{showPhoto(index+1);restart()};
-function restart(){clearInterval(timer);timer=setInterval(()=>showPhoto(index+1),2400)}
+function restart(){clearInterval(timer);timer=setInterval(()=>showPhoto(index+1),3500)}
 showPhoto(0);restart();
 
 const letters=[
